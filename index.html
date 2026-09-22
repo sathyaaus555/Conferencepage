@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Changed the Way We Work</title>
+<style>
+:root{--bg:#070b18;--panel:#10172b;--text:#f7f8ff;--muted:#aeb7d0;--cyan:#49e7ff;--violet:#8a6cff;--pink:#ff5bbd;--orange:#ffae57}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,Segoe UI,sans-serif;background:radial-gradient(circle at 12% 25%,#24104d 0,transparent 24%),radial-gradient(circle at 82% 46%,#063f55 0,transparent 22%),var(--bg);color:var(--text)}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.12;background-image:linear-gradient(#7280a733 1px,transparent 1px),linear-gradient(90deg,#7280a733 1px,transparent 1px);background-size:48px 48px}
+section{min-height:100vh;padding:10vh 8vw;display:flex;flex-direction:column;justify-content:center;position:relative;border-bottom:1px solid #ffffff10}.kicker{font:700 12px ui-monospace,monospace;letter-spacing:.18em;color:#aab7ff;text-transform:uppercase}.hero h1,.section-title{font-size:clamp(42px,6vw,82px);line-height:.98;letter-spacing:-.055em;max-width:1100px;margin:22px 0}.grad{background:linear-gradient(90deg,var(--cyan),#8d7cff,var(--pink));-webkit-background-clip:text;color:transparent}.lead{font-size:clamp(18px,2vw,25px);line-height:1.55;color:var(--muted);max-width:820px}.scroll{position:absolute;bottom:40px;font:700 11px ui-monospace;color:#93a1c6;letter-spacing:.2em}
+.loop{display:flex;flex-wrap:wrap;gap:10px;max-width:1050px;margin-top:30px}.pill,.card{border:1px solid #ffffff20;background:#111a32aa;backdrop-filter:blur(12px);box-shadow:0 14px 45px #0005}.pill{padding:13px 17px;border-radius:999px;color:#dce4ff}.pill.good{border-color:#55ffc866;color:#8dffd8}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;margin-top:34px;max-width:1150px}.card{padding:24px;border-radius:18px;min-height:150px;cursor:pointer;transition:.25s;text-align:left;color:white;font:inherit}.card:hover{transform:translateY(-5px);border-color:#6fe8ff88;box-shadow:0 18px 55px #25c6ff18}.card b{display:block;font-size:20px;margin-bottom:18px}.card span{font:700 13px ui-monospace;color:var(--cyan)}.card.fun span{color:#ffc75c}
+.compare{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:24px;max-width:1050px;margin:35px 0}.box{padding:30px;border:1px solid #ffffff20;border-radius:20px;background:#10182caa}.box small{font:700 11px ui-monospace;color:#91a1ca}.box h3{font-size:24px}.question{max-width:1050px;padding:35px;text-align:center;border:1px solid #ffb25f88;border-radius:22px;background:linear-gradient(90deg,#ff763a16,#8b5cff20);font-size:clamp(30px,4vw,50px);font-weight:800}.quote{max-width:1000px;border-left:4px solid var(--cyan);padding:25px 30px;background:#14203bbb;border-radius:0 18px 18px 0;font-size:22px;line-height:1.7}.timeline{max-width:950px;margin-top:30px}.step{display:grid;grid-template-columns:58px 1fr;gap:18px;padding:14px 0}.num{width:44px;height:44px;border:1px solid #8a6cff;border-radius:12px;display:grid;place-items:center;color:#c4baff;font:700 12px ui-monospace}.step h3{margin:0 0 6px}.step p{margin:0;color:var(--muted)}.bars{max-width:1000px;margin-top:32px}.barrow{display:grid;grid-template-columns:90px 1fr;align-items:center;gap:18px;margin:18px 0;font:700 12px ui-monospace}.bar{height:48px;border-radius:10px;padding:15px;color:#111;font-weight:800}.old{width:100%;background:linear-gradient(90deg,#ff7bac,#ffca46)}.now{width:52%;background:linear-gradient(90deg,#42e7e0,#6effad)}.final{align-items:center;text-align:center}.final h2{font-size:clamp(44px,6vw,80px);margin:0}.modal{display:none;position:fixed;inset:0;z-index:20;background:#02040bd9;backdrop-filter:blur(12px);align-items:center;justify-content:center;padding:25px}.modal.open{display:flex}.modalbox{width:min(900px,95vw);background:#0d1428;border:1px solid #ffffff26;border-radius:24px;padding:18px;box-shadow:0 30px 100px #000}.modalhead{display:flex;justify-content:space-between;align-items:center;padding:6px 6px 16px}.modalhead h3{margin:0;font-size:22px}.close{border:0;background:#ffffff12;color:white;width:38px;height:38px;border-radius:50%;font-size:22px;cursor:pointer}video{width:100%;max-height:65vh;border-radius:16px;background:#03050b}.hint{color:#8f9ab9;font-size:13px;margin:12px 4px 3px}
+@media(max-width:800px){section{padding:9vh 6vw}.cards{grid-template-columns:1fr}.compare{grid-template-columns:1fr}.compare>div:nth-child(2){display:none}.old,.now{width:100%}}
+</style></head>
+<body>
+<section class="hero">
+<div class="kicker">A conversation about learning in the age of AI</div>
+<h1>AI changed the way we work.<br><span class="grad">It shouldn't change the way we think.</span></h1>
+<p class="lead">A short story about how technology shortened the path to answers — and why curiosity, judgement and human thinking matter more than ever.</p>
+<div class="scroll">SCROLL ↓</div>
+</section>
+
+<section>
+<div class="kicker">01 — The way we learned</div>
+<h2 class="section-title">If something didn't work,<br>we had a loop.</h2>
+<p class="lead">We Googled it. We read the documentation. We asked the person sitting next to us. We tried something. We broke something else. We undid it. And we tried again.</p>
+<div class="loop"><span class="pill">Google it</span><span class="pill">Read the docs</span><span class="pill">Ask someone</span><span class="pill">Try something</span><span class="pill">Break something</span><span class="pill">Undo it</span><span class="pill">Try again</span><span class="pill good">And when it worked — pure joy</span></div>
+<p class="lead" style="margin-top:28px">The struggle was not a detour; it was part of the learning.</p>
+</section>
+
+<section>
+<div class="kicker">02 — The world today</div>
+<h2 class="section-title">Today, the path to an answer is <span class="grad">much shorter.</span></h2>
+<p class="lead">Click any card. Each one opens a short animated moment.</p>
+<div class="cards">
+<button class="card" data-title="Got an assignment?" data-video="videos/assignment.mp4"><b>Got an assignment?</b><span>→ ask AI · play video</span></button>
+<button class="card" data-title="Don't understand a piece of code?" data-video="videos/code.mp4"><b>Don't understand a piece of code?</b><span>→ ask AI · play video</span></button>
+<button class="card" data-title="Need a presentation?" data-video="videos/presentation.mp4"><b>Need a presentation?</b><span>→ ask AI · play video</span></button>
+<button class="card" data-title="Resume?" data-video="videos/resume.mp4"><b>Resume?</b><span>→ ask AI · play video</span></button>
+<button class="card" data-title="Interview preparation?" data-video="videos/interview.mp4"><b>Interview preparation?</b><span>→ ask AI · play video</span></button>
+<button class="card fun" data-title="Don't know what to eat tonight?" data-video="videos/food.mp4"><b>Don't know what to eat tonight?</b><span>→ probably AI too 😄 · play video</span></button>
+</div>
+</section>
+
+<section>
+<div class="kicker">03 — The interesting problem</div>
+<h2 class="section-title">Earlier we had to find the answer.<br>Now the answer is already there.</h2>
+<div class="compare"><div class="box"><small>THEN</small><h3>We had to work to find the answer.</h3></div><div>→</div><div class="box"><small>NOW</small><h3>We can get an answer instantly.</h3></div></div>
+<div class="question">But is it a <span class="grad">good answer?</span><div style="font-size:15px;color:#b7bfd3;margin-top:10px">That is the new skill: not just finding an answer — judging one.</div></div>
+</section>
+
+<section>
+<div class="kicker">04 — Where I stand</div>
+<div class="quote">I'm not here as an expert standing above you.<br><b>I'm right there with you — still learning, still experimenting.</b></div>
+</section>
+
+<section>
+<div class="kicker">05 — How we used to deliver</div>
+<h2 class="section-title">The process we followed for every requirement</h2>
+<p class="lead">Even a small requirement travelled through the same path, one handover at a time.</p>
+<div class="timeline">
+<div class="step"><div class="num">01</div><div><h3>Solution design</h3><p>Business analysis and design before the requirement reached the team.</p></div></div>
+<div class="step"><div class="num">02</div><div><h3>Coding starts</h3><p>Development begins once the requirement is available.</p></div></div>
+<div class="step"><div class="num">03</div><div><h3>Test plan and test scripts</h3><p>Test scenarios and scripts are prepared.</p></div></div>
+<div class="step"><div class="num">04</div><div><h3>Review</h3><p>BA, development and testing review together.</p></div></div>
+<div class="step"><div class="num">05</div><div><h3>Deploy to test environment</h3><p>The build becomes available for testing.</p></div></div>
+<div class="step"><div class="num">06</div><div><h3>Execute and raise defects</h3><p>Scenarios are tested and issues are reported.</p></div></div>
+<div class="step"><div class="num">07</div><div><h3>Production deployment</h3><p>Once ready, the change goes to production.</p></div></div>
+</div>
+</section>
+
+<section>
+<div class="kicker">06 — What actually changed</div>
+<h2 class="section-title">The flow may look familiar.<br>The <span class="grad">time</span> is not.</h2>
+<p class="lead">Technology, automation and AI have compressed the delivery window. That makes thinking clearly inside that window even more important.</p>
+<div class="bars"><div class="barrow"><span>EARLIER</span><div class="bar old">Longer delivery cycle</div></div><div class="barrow"><span>TODAY</span><div class="bar now">Much faster</div></div></div>
+</section>
+
+<section class="final">
+<div class="kicker">The thought to carry forward</div>
+<h2>The answer is easier to get now.<br><span class="grad">Judgement is the skill.</span></h2>
+<p class="lead">Use AI to move faster. Keep your curiosity, questioning and thinking switched on.</p>
+</section>
+
+<div class="modal" id="modal"><div class="modalbox"><div class="modalhead"><h3 id="modalTitle"></h3><button class="close" aria-label="Close">×</button></div><video id="modalVideo" controls playsinline></video><div class="hint">Add your MP4 files inside the repo's <b>videos</b> folder using the filenames already wired to these cards.</div></div></div>
+<script>
+const modal=document.getElementById('modal'),video=document.getElementById('modalVideo'),title=document.getElementById('modalTitle');
+document.querySelectorAll('.card').forEach(c=>c.addEventListener('click',()=>{title.textContent=c.dataset.title;video.src=c.dataset.video;modal.classList.add('open');video.play().catch(()=>{});}));
+function closeModal(){video.pause();video.removeAttribute('src');video.load();modal.classList.remove('open')}
+document.querySelector('.close').onclick=closeModal;modal.addEventListener('click',e=>{if(e.target===modal)closeModal()});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal()});
+</script></body></html>
