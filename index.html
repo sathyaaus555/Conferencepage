@@ -57,22 +57,21 @@
 </div></div></main>
 
 <main id="real" class="page"><div class="wrap"><div class="eyebrow">03 — Real World Engineering · Speaker Reference</div><h1 class="hero">What happens<br><span class="grad">behind one click?</span></h1><div class="script">
-<p>Now let's move away from our small demo and look at something we use in real life.</p>
-<p>Imagine a student named Diya leaves this conference. She opens a ride app, enters her destination and taps Book.</p>
-<p>From Diya's point of view, that is almost the whole story. Open the app. Enter the destination. Book the ride. A driver appears.</p>
-<p>But as engineers, we should be curious about what happened during those few seconds.</p>
-<p>First, the app needs to know where Diya is. Her phone provides location information using GPS.</p>
-<p>Then the application needs to find drivers around that location. But it is not simply a matter of picking the driver who looks closest on the map.</p>
-<p>One driver may be physically close but travelling in the opposite direction. Another may already have a passenger. Another may be stuck in traffic. So the system has to consider location, availability, direction, distance, traffic and other information before deciding which driver to match.</p>
-<p>That simple tap on the phone can trigger calls through APIs into backend services. Services process information. Databases may be read. Maps and traffic systems may be involved. Events and notifications move between different parts of the platform.</p>
+<p>I also want to touch on how real systems connect to other systems: APIs, databases, cloud platforms, security, notifications and data. We often learn each technology separately. Now let's see how they come together in one experience.</p>
+<p>Think of something many of us have used: a ride booking app. Imagine a student named Diya has just finished attending this conference. She walks out of the venue, opens Uber, enters her destination, sees a price and presses Book. That's it. From her point of view, she opened an app, entered a destination and pressed a button.</p>
+<p>But let's freeze that moment. The second she presses Book, something much more interesting starts happening behind the screen.</p>
+<p>First, the app needs to know where she is. Her phone provides location information through GPS. Then the application needs to find drivers nearby. There could be hundreds of drivers moving around the city. Does it simply choose the one who is physically closest? Not necessarily.</p>
+<p>One driver may be only 500 metres away but travelling in the opposite direction. Another may be two kilometres away but able to reach her faster. There may be traffic, and a driver may still be finishing another trip. What looked like a simple Book button has become a decision making problem. The system needs to consider location, availability, direction, routes and traffic.</p>
+<p>Somewhere behind that screen, the mobile app talks to APIs. APIs connect to backend services. Services work with databases. Location data keeps changing; maps and traffic information may be involved. Events move between parts of the system, cloud infrastructure keeps services running, security protects data, and algorithms — sometimes including AI and machine learning — can help with decisions and predictions.</p>
 <div class="diagram"><span class="node">📱 App</span><span class="arrow">→</span><span class="node">📍 GPS</span><span class="arrow">→</span><span class="node">API</span><span class="arrow">→</span><span class="node">Services</span><span class="arrow">→</span><span class="node">🚗 Driver</span><span class="arrow">→</span><span class="node">Maps</span><span class="arrow">→</span><span class="node">Payment</span></div>
-<p>Once a driver accepts, Diya sees the driver's details and an estimated arrival time. As the driver moves, the location changes. The ETA changes. The app needs to keep updating.</p>
-<p>At the end of the journey, payment happens. A receipt may be generated. A rating may be requested. All of this has to work together as one experience.</p>
-<p>And behind that experience there may be mobile applications, APIs, backend services, microservices, databases, events, cloud infrastructure, security, monitoring, maps, payment systems — and increasingly AI and machine learning.</p>
+<p>Eventually, one driver receives a notification: Diya wants a ride. The driver accepts. Now Diya can see the car and an estimated arrival time: three minutes away. A moment later, she checks again and it still says three minutes. We've all watched that little car move around the map! Behind it, location updates, ETA calculations, route information and notifications keep flowing.</p>
+<p>Then the journey starts. Traffic changes, the fare is calculated, the journey finishes, payment is processed, the driver gets paid, Diya receives a receipt, and the app asks her to rate the driver. All of that began with one action: Book a ride.</p>
+<p>Now imagine that one service fails when Diya presses Book and nothing happens. She isn't going to say, “There is increased latency between two microservices.” She'll say, “Uber isn't working. Let's move to another app.”</p>
 <div class="callout">Customers don't experience our architecture.<br><span class="grad">They experience the product.</span></div>
-<p>That's why I want you to become curious about systems, not only screens.</p>
-<p>When you order food, what happens after you tap Order? When you make a payment, where does that request travel? When Netflix recommends something, what happened behind that recommendation? When an OTP arrives in two seconds, what happened during those two seconds?</p>
-<p>Once you start asking those questions, technology becomes much more interesting. You stop seeing only an app. You start seeing a system.</p>
+<p>That's what I want you to notice. We learn Java, Python, APIs, databases, cloud, AI, DevOps and cybersecurity as separate subjects. In the real world, technology doesn't work in separate boxes. These parts come together to create one experience.</p>
+<p>From now on, stay curious about what happens behind the screen. When you order food, what happens after you tap Order? When you make a payment, where does the request go? When Netflix recommends something, what happened behind that recommendation? When an OTP arrives two seconds after you request it, what happened in those two seconds?</p>
+<p>You don't need every answer today. Start asking the questions. That curiosity takes you from learning individual technologies to thinking like an engineer.</p>
+<p>And that leads to another question: with hundreds of tools and subjects around us — AI, cloud, cybersecurity, data and APIs — what should you actually learn? Let's build a simple roadmap.</p>
 </div></div></main>
 
 <main id="road" class="page"><div class="wrap"><div class="eyebrow">04 — Road Map · Speaker Reference</div><h1 class="hero">Okay... what exactly<br><span class="grad">should I learn?</span></h1><div class="script">
